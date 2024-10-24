@@ -8,7 +8,7 @@ function App() {
    const [backgroundImage, setBackgroundImage] = useState("");
 
   const handleSearch = async (city) => {
-    const apiKey = process.env.REACT_APP_API_KEY;
+    const apiKey = process.env.REACT_APP_API_KEY || "8b5ff5beaf32952337c85e1d7f48571a";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
     try {
